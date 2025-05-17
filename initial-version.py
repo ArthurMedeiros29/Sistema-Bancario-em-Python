@@ -1,10 +1,3 @@
-print("""
-[D] Depositar
-[S] Sacar
-[E] Extrato
-[F] Finalizar Operacao
-""")
-
 saldo = 0
 limite = 500
 numero_saques = 0
@@ -13,7 +6,13 @@ total_depositado = 0
 total_sacado = 0
 
 while True:
-    opcao = input("\nEscolha uma das opcoes acima: ").upper()
+    print("""
+    [D] Depositar
+    [S] Sacar
+    [E] Extrato
+    [F] Finalizar Operacao
+    """)
+    opcao = input("Escolha uma das opcoes acima: ").upper()
 
     if opcao == "D":
         deposito = float(input("Informe o valor que deseja depositar: "))
